@@ -1,3 +1,8 @@
 ol.inside {
     list-style-type: lower-alpha;
 }
+
+a {
+    color: green;
+    text-decoration: none;
+}
