@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | PithaGhor</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Please Fill Up the Form</h2>
+            <form action="">
+                <label for="name">Your Name: 
+                    <input id="name" type="text" placeholder="Enter Name">
+                </label>
+                <label for="email">Your Email:
+                    <input type="email" name="" id="email" placeholder="Enter Email Address">
+                </label>
+                <label for="phone">Your Phone:
+                    <input type="text" id="phone" placeholder="Enter Phone Number">
+                </label>
+
+
+                <fieldset>
+                    <legend>Pick [One] from Below</legend>
+                    <label for="chitoi"><input type="radio" name="pitha" id="chitoi">Chitoi Pitha</label>
+                    <label for="bhapa"><input type="radio" name="pitha" id="bhapa">Bhapa Pitha</label>
+                    <label for="patishapta"><input type="radio" name="pitha" id="patishapta">Patishapta Pitha</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pick [One or More] from Below </legend>
+                    <label for="shorisha"><input type="checkbox" name="bhorta" id="shorisha">Shorisha Bhorta (Jhajh)</label>
+                    <label for="fish"><input type="checkbox" name="bhorta" id="fish">Fish Bhorta (Shutki)</label>
+                    <label for="chili"><input type="checkbox" name="bhorta" id="chili">Chili Bhorta (Morich)</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Instruction</legend>
+                    <textarea name="" id="" cols="30" rows="2" placeholder="Add Instructions"></textarea>
+                </fieldset>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

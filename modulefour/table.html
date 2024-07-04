@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="styles/nav.css">
+
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+           border: 1px solid black; 
+           padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="media.html">Media</a></li>
+                <li>
+
+                    <a href="table.html">Table</a>
+                    <ul class="dropdown">
+                        <li><a href="media.html">Media</a></li>
+                        <li>
+                            <a href="table.html">Table</a>
+                            <ul class="dropdown">
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="table.html">Table</a></li>
+                                <li><a href="form.html">Form</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+            <caption>Student Information</caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Institute</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tanjir Ahmed Nadim</td>
+                    <td>NSU</td>
+                    <td>3.96</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Safayet Ullah Neyam</td>
+                    <td>NSU</td>
+                    <td>2.73</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Admond Hilari</td>
+                    <td>IBA, DU</td>
+                    <td>3.76</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total Student: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    
+
+</body>
+</html>
