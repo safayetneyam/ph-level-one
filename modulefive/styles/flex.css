@@ -1,0 +1,23 @@
+.parent {
+    padding: 25px;
+    background-color: blanchedalmond;
+    display: flex;
+    gap: 30px; /* gap of children */
+    justify-content: space-evenly;
+    height: 350px;
+    align-items: center; /* stretch, start, center */
+    flex-direction: row; /* row, column, row-reverse, column-reverse */
+    flex-wrap: wrap;
+}
+
+/* flex is used to control the children inside a parent  */
+
+.child {
+    border: 2px solid rgb(15, 158, 160);
+    background-color: rgb(178, 228, 229);
+    padding: 20px;
+    font-size: 28px;
+    margin: 10px 0;
+    /* display: inline; */
+    /* width: 400px; */
+}
