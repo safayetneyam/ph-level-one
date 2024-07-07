@@ -1,0 +1,11 @@
+img {
+    display: block;
+}
+
+.feedback, .date, .textarea {
+    display: block;
+}
+
+.submit {
+    margin-top: 15px;
+}
