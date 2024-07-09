@@ -294,3 +294,55 @@ body {
     height: 100%;
     width: 100%;
 }
+
+/* footer styles starts here  */
+
+.footer-container {
+    width: 1600px;
+    height: 500px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    background-color: rgb(7, 2, 17);
+    /* border: 2px solid red; */
+    padding-top: 10px;
+}
+
+.contact {
+    display: flex;
+    color: white;
+}
+
+.footer-first-section {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.hr {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.social-icons {
+    width: 400px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-last-section {
+    width: 60%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
