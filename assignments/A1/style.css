@@ -256,3 +256,72 @@ nav {
     border-radius: 16px;
     padding: 32px;
 }
+
+
+/* target section start from here  */
+
+.target-sec {
+    width: 1140px;
+    height: 460px;
+    margin: 0 auto;
+    margin-top: 151px;
+    /* border: 2px solid red; */
+}
+
+.target-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.target-title {
+    /* padding-top: 20px; */
+    width: 852px;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.target-stacks {
+    width: 100%;
+}
+
+.stack {
+    width: 33%;
+}
+
+.target-stacks {
+    display: flex;
+    gap: 24px;
+}
+
+.stack {
+    width: 284px;
+    height: 219px;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.stack img {
+    margin-bottom: 24px;
+}
+
+.stack a {
+    color: rgb(13, 19, 33);
+}
+
+.stack1 {
+    background-color: rgba(255, 76, 30, 0.05);
+}
+
+.stack2 {
+    background-color: rgba(0, 76, 232, 0.05);
+}
+
+.stack3 {
+    background-color: rgba(255, 223, 0, 0.05);
+}
