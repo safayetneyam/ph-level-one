@@ -296,6 +296,9 @@ nav {
 
 .target-stacks {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 24px;
 }
 
@@ -304,6 +307,11 @@ nav {
     height: 219px;
     padding: 40px;
     border-radius: 16px;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start; */
 }
 
 .stack img {
@@ -346,6 +354,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
 }
 
 .support-container {
