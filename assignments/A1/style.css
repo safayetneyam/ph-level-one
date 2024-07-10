@@ -140,7 +140,8 @@ nav {
     font-size: 32px;
     font-weight: 800;
     color: rgb(13, 19, 33);
-    margin-bottom: 24px;
+    margin-bottom: 18px;
+    /* changed to 18 from 24  */
 }
 
 .section-description {
@@ -148,6 +149,7 @@ nav {
     font-weight: 400;
     color: rgb(13, 19, 33);
     margin-bottom: 48px;
+    text-align: center;
 }
 
 .dev-block1, .dev-block2, .dev-block3 {
@@ -216,3 +218,41 @@ nav {
     width: 100%;
 }
 
+/* inspiration section style starts here  */
+
+.inspiration-sec {
+    width: 1140px;
+    height: 775px;
+    margin: 0 auto;
+    margin-top: 74px;
+    /* border: 2px solid red; */
+}
+
+.inspiration-title {
+    /* padding-top: 20px; */
+    width: 850px;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.inspiration-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inspiration-yt {
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.2);
+    border-radius: 16px;
+}
+
+.inspiration-yt iframe {
+    border-radius: 16px;
+    padding: 32px;
+}
