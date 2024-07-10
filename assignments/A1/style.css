@@ -82,6 +82,7 @@ nav {
 
 .banner-head {
     font-size: 38px;
+    /* font doesn't fix with 48px; according to .fig file  */
     font-weight: 800;
     text-align: center;
 }
@@ -103,3 +104,115 @@ nav {
     color: white;
     background-color: rgb(13, 19, 33);
 }
+
+/* main body part starts here  */
+
+
+/* web development section style starts here  */
+.dev-sec {
+    width: 1140px;
+    height: 1395px;
+    margin: 0 auto;
+    margin-top: 74px;
+    /* border: 2px solid red; */
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.02);
+}
+
+.dev-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dev-title {
+    padding-top: 20px;
+    width: 850px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(13, 19, 33);
+    margin-bottom: 24px;
+}
+
+.section-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(13, 19, 33);
+    margin-bottom: 48px;
+}
+
+.dev-block1, .dev-block2, .dev-block3 {
+    width: 850px;
+    height: 240px;
+    margin: 0 auto;
+    padding: 48px;
+    margin-bottom: 32px;
+    /* border: 2px solid green; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.dev-block1 {
+    background: linear-gradient(90.00deg, rgb(255,255,255), rgba(255, 255, 255, 0) 100%);
+}
+
+.dev-block2 {
+    background: linear-gradient(270.00deg, rgb(255,255,255), rgba(255, 255, 255, 0) 100%);
+}
+
+.dev-block3 {
+    background: linear-gradient(90.00deg, rgb(255,255,255), rgba(255, 255, 255, 0) 100%);
+}
+
+.sub-section-content {
+    width: 55%;
+}
+
+.sub-section-img {
+    width: 35%;
+    width: 259.56px;
+    height: 217.01px;
+}
+
+.sub-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: rgb(13, 19, 33);
+    margin-bottom: 16px;
+}
+
+.sub-section-text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: rgb(13, 19, 33);
+    margin-bottom: 32px;
+}
+
+.sub-section-btn {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(13, 19, 33);
+    padding: 12px 20px;
+}
+
+.sub-section-img img {
+    width: 100%;
+}
+
