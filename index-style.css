@@ -1,8 +1,12 @@
-ol.inside {
-    list-style-type: lower-alpha;
+ul.inside {
+    list-style-type: circle;
 }
 
 a {
     color: green;
     text-decoration: none;
+}
+
+ul.outer {
+    list-style-type: square;
 }
