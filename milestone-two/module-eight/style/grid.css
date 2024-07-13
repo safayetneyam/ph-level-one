@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px 200px 200px; */
+    /* grid-template-columns: repeat(2, 100px); */
+    /* grid-template-columns: repeat(2, 100px) 200px 150px; */
+
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-template-columns: 80px 80px auto; */
+
+    grid-template-columns: 80px 80px;
+    justify-content: center;
+    column-gap: 3px;
+}
+
+.item {
+    border: 1px solid green;
+    margin-bottom: 2px;
+    padding: 5px;
+    text-align: right;
+}
