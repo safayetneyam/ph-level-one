@@ -14,10 +14,18 @@ ul.outer {
 
 
 /* table */
-.table {
-    border: 1px dashed black;
+table {
+    border: 2px dashed red;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td, th {
+    border: 1px solid black;
+    padding: 2px 12px;
 }
 
-th, td {
-    border: 1px solid red;
+.title {
+    text-align: center;
+    background-color: gainsboro;
 }
+
