@@ -26,7 +26,6 @@ img {
     gap: 5px;
 }
 
-
 /* responsive media query  */
 @media screen and (max-width: 576px) {
     .row {

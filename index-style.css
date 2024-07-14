@@ -10,3 +10,14 @@ a {
 ul.outer {
     list-style-type: square;
 }
+
+
+
+/* table */
+.table {
+    border: 1px dashed black;
+}
+
+th, td {
+    border: 1px solid red;
+}
