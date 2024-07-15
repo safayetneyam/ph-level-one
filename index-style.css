@@ -1,16 +1,17 @@
-ul.inside {
-    list-style-type: circle;
-}
-
 a {
     color: green;
     text-decoration: none;
 }
 
-ul.outer {
-    list-style-type: square;
+/* intro */
+.intro {
+    margin: 0 auto;
+    text-align: center;
 }
-
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: -20px;
+}
 
 
 /* table */
