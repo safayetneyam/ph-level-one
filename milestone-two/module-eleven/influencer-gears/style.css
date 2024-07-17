@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Poppins", sans-serif; */
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* shared style */
+.primary-color {
+    color: rgb(58, 58, 58);
+}
+
+.btn-bg {
+    background-color: rgb(224, 44, 109);
+}
+
+
+/* header part */
+
+.header-container {
+    width: 100%;
+    max-width: 1163px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    width: 582px;
+    height: 270px;
+    /* border: 2px solid red; */
+}
+
+.header-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.header-content p {
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 505px;
+    margin-bottom: 16px;
+}
+
+.header-content .fa-solid {
+    margin-left: 5px;
+}
+
+.header-content button {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    /* line-height: 24px; */
+    padding: 10px 24px;
+    border: none;
+    border-radius: 41px;
+}
+
+
+.header-image {
+    height: 475px;
+    width: 475px;
+    margin-top: 105px;
+    background-image: url(images/circle-design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid green; */
+}
+
+.header-image img {
+    width: 440px;
+    height: 414px;
+}
+
+
+/* responsive layout */
+@media screen and (max-width: 576px) {
+    .header-container {
+        flex-direction: column-reverse;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 100px;
+        height: 144px;
+        width: 85%;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        margin-bottom: -5px;
+        font-size: 32px;
+    }
+
+    .header-image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .header-image img {
+        width: 16rem;
+        height: 16rem;
+        margin-top: 60px;
+        margin-left: 45px;
+    }
+}
