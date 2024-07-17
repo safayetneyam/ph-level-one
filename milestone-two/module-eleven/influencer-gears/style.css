@@ -355,12 +355,14 @@ footer {
     }
 
     .navbar {
-        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: -80px;
+        /* margin-bottom: -80px; newly added */
     }
 
     .header-container {
         flex-direction: column-reverse;
-        /* margin-bottom: 0px; */
     }
 
     .header-content {
