@@ -6,6 +6,8 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* shared style */
@@ -27,6 +29,51 @@ body {
 
 
 /* header part */
+
+.navbar {
+    max-width: 1163px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu {
+    display: none;
+}
+
+.navbar > h3 {
+    font-size: 24px;
+    font-weight: 700;
+} 
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 34px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    font-weight: 600;
+}
 
 .header-container {
     width: 100%;
@@ -131,7 +178,7 @@ body {
 
 .collection {
     width: 1047px;
-    height: 1662px;
+    /* height: 1662px; */
     margin: 0 auto;    
     /* border: 2px dashed red; */
 }
@@ -207,8 +254,110 @@ body {
     color: rgba(224, 44, 109, 0.87);
 }
 
+
+/* motto section */
+
+.motto {
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.motto-content {
+    width: 610px;
+}
+
+.motto-content > h2 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: left;
+
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.motto-content > p {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    width: 500px;
+}
+
+.motto-content button {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 24px;
+    border: none;
+}
+
+.motto-content .fa-solid {
+    margin-left: 5px;
+}
+
+/* footer styles */
+
+footer {
+    margin-top: 70px;
+    padding-top: 50px;
+    height: 240px;
+    color: white;
+    background-color: rgb(10, 8, 38);
+}
+
+.footer-content {
+    width: 280px;
+    height: 139px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-content .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content .logos .fa-brands {
+    background-color: #23213C;
+    /* border: 2px solid red; */
+    padding: 10px;
+    border-radius: 50%;
+}
+
 /* responsive layout design */
 @media screen and (max-width: 576px) {
+    .navbar .menu {
+        display: inline;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
     .header-container {
         flex-direction: column-reverse;
         /* margin-bottom: 0px; */
@@ -309,4 +458,42 @@ body {
     .see-more {
         margin-top: 32px;
     }
+
+    .motto {
+        max-width: 330px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .motto img {
+        max-width: 299px;
+    }
+
+    .motto-content {
+        max-width: 95%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .motto-content > h2 {
+        font-size: 24px;
+        max-width: 311px;
+        text-align: center;
+    }
+
+    .motto-content > p {
+        font-size: 16px;
+        max-width: 329px;
+        text-align: center;
+    }
+
+    .motto-content button {
+        margin-top: 20px;
+    }
+
 }
