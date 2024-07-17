@@ -17,6 +17,14 @@ body {
     background-color: rgb(224, 44, 109);
 }
 
+.gray {
+    color: rgb(120, 120, 133);
+}
+
+.orange {
+    color: rgb(251, 130, 0);
+}
+
 
 /* header part */
 
@@ -36,13 +44,13 @@ body {
     /* border: 2px solid red; */
 }
 
-.header-content h1 {
+.header-content > h1 {
     font-size: 52px;
     font-weight: 700;
     margin-bottom: 16px;
 }
 
-.header-content p {
+.header-content > p {
     font-size: 16px;
     font-weight: 600;
     max-width: 505px;
@@ -119,6 +127,84 @@ body {
     background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
 }
 
+/* popular collection section */
+
+.collection {
+    width: 1047px;
+    height: 1662px;
+    margin: 0 auto;    
+    /* border: 2px dashed red; */
+}
+
+.collection > h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+    /* margin-bottom: 50px; */
+}
+
+.items-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item {
+    width: 329px;
+    height: 476px;
+    /* border: 2px solid green; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: white;
+}
+
+.item-div {
+    margin: 16px 15px 16px 14px;
+}
+
+.item-div > h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.item-div > h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.item-div > img {
+    width: 300px;
+    margin-top: 16px;
+}
+
+.item-div > p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.rating-text {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.see-more {
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+}
 
 /* responsive layout design */
 @media screen and (max-width: 576px) {
@@ -139,12 +225,12 @@ body {
         text-align: center;
     }
 
-    .header-content h1 {
+    .header-content > h1 {
         font-size: 28px;
         margin-bottom: 0px;
     }
 
-    .header-content p {
+    .header-content > p {
         font-size: 14px;
         margin-bottom: 20px;
     }
@@ -194,5 +280,28 @@ body {
     .company-images .first-half img,
     .company-images .last-half img {
         width: 100%;
+    }
+    
+    /* .collection {
+        margin-top: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .collection {
+        margin-top: -80px;
+        max-width: 329px;
+    }
+
+    .items-container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
     }
 }
