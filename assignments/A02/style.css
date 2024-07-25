@@ -278,15 +278,13 @@ main {
 
 
 
-
-
 /* trainings section */
 /* trainings section */
 
 .training {
     max-width: 1060px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 70px;
 }
 
@@ -480,6 +478,11 @@ main {
 
 
 @media screen and (max-width: 576px) {
+
+    main {
+        transform: translateY(-30px);
+    }
+
     .navbar {
         max-width: 353px;
     }
@@ -491,6 +494,7 @@ main {
     .navbar .menu {
         display: inline;
         color: white;
+        padding-right: 5px;
     }
 
     .header-container {
@@ -590,6 +594,10 @@ main {
 
     .training {
         max-width: 352px;
+    }
+
+    .training-content > h1 {
+        font-size: 32px;
     }
 
     .training-pic3,
