@@ -36,15 +36,13 @@ body {
 }
 
 
-
-
-
-
 /* header section */
+/* ----------------------------------- */
 /* ----------------------------------- */
 /* ----------------------------------- */
 
 .header {
+    /* max-width: 100%; */
     max-width: 1440px;
     /* height: 715px; */
     margin: 0 auto;
@@ -251,9 +249,188 @@ body {
 
 
 
+/* main body part starts here */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
 
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+    border: 1px;
+    /* border: 2px dashed black; */
+}
 
+.training {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.training-content {
+    max-width: 670px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.training-content > h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.training-content > p {
+    max-width: 620px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.training-banner-part1, .training-banner-part2 {
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.training-pic1,  
+.training-pic2,
+.training-pic3,
+.training-pic4,
+.training-pic5,
+.training-pic6 {
+    /* border: 2px solid green; */
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.training-pic1 > img,  
+.training-pic2 > img,
+.training-pic3 > img,
+.training-pic4 > img,
+.training-pic5 > img,
+.training-pic6 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.training-pic1 {
+    width: 320px;
+}
+
+.training-pic1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 255, 210, 0.5);
+}
+
+.training-pic1 > p {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+
+.training-pic2 {
+    width: 540px;
+}
+
+.training-pic2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.training-pic2 > p {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    color: white;
+}
+
+.training-pic3 {
+    width: 390px;
+}
+
+.training-pic3::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.training-pic3 > p {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: white;
+}
+
+.training-pic4 {
+    width: 435px;
+}
+
+.training-pic4::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.training-pic4 > p {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color: white;
+}
+
+.training-pic5 {
+    width: 408px;
+}
+
+.training-pic5::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(66, 255, 0, 0.3);
+}
+
+.training-pic5 > p {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: white;
+}
+
+.training-pic6 {
+    width: 470px;
+}
+
+.training-pic6::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 71, 255, 0.3);
+}
+
+.training-pic6 > p {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: white;
+}
 
 /* header section */
 /* ----------------------------------- */
@@ -386,5 +563,3 @@ body {
         gap: 20px;
     }
 }
-
-
