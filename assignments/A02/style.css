@@ -113,6 +113,9 @@ body {
 
 
 /* header part */
+/* header part */
+/* header part */
+/* header part */
 
 .header-container {
     max-width: 1040px;
@@ -180,6 +183,12 @@ body {
     width: 100%;
 }
 
+.fa-caret-right {
+    color: white;
+    position: absolute;
+    transform: translate(14px, 19px);
+}
+
 .box-circle {
     width: 40px;
     height: 40px;
@@ -217,6 +226,7 @@ body {
     align-items: center;
 
     margin-bottom: -200px;
+    position: relative;
 }
 
 .box-workout > h3 {
@@ -251,8 +261,11 @@ body {
 
 /* main body part starts here */
 /* ----------------------------------- */
+/* main body part starts here */
 /* ----------------------------------- */
+/* main body part starts here */
 /* ----------------------------------- */
+
 
 
 main {
@@ -262,6 +275,13 @@ main {
     border: 1px;
     /* border: 2px dashed black; */
 }
+
+
+
+
+
+/* trainings section */
+/* trainings section */
 
 .training {
     max-width: 1060px;
@@ -432,10 +452,32 @@ main {
     color: white;
 }
 
-/* header section */
+
+
+/* footer part */
 /* ----------------------------------- */
+/* footer part */
 /* ----------------------------------- */
+/* footer part */
 /* ----------------------------------- */
+
+
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+/* ----------------------------------- */
+/* MOBILE SCREEN */
+/* ----------------------------------- */
+/* MOBILE SCREEN */
+/* ----------------------------------- */
+
+
+
 
 @media screen and (max-width: 576px) {
     .navbar {
@@ -499,6 +541,10 @@ main {
         height: 30px;
     }
 
+    .fa-caret-right {
+        transform: translate(8px, 15px);
+    }
+
     .tutorial-content > h3 {
         font-size: 18.14px;
     }
@@ -536,18 +582,70 @@ main {
         backdrop-filter: blur(15.12px);
         transform: translateX(190px) translateY(-410px);
     }
+
+
+
+
+    /* trainings and exercises - mobile device */
+
+    .training {
+        max-width: 352px;
+    }
+
+    .training-pic3,
+    .training-pic6,
+    .exc-desc {
+        display: none;
+    }
+
+    .training-banner-part2 {
+        margin-top: -30px;
+    }
+
+    .training-pic1 {
+        color: white;
+    }
+
+    .training-pic1,
+    .training-pic2 {
+        width: 50%;
+        height: 150px;
+    }
+
+    .training-pic4 {
+        width: 45%;
+        height: 150px;
+    }
+
+    .training-pic4 > p {
+        top: 95px;
+        left: 30px;
+    }
+
+    .training-pic5 {
+        width: 55%;
+        height: 150px;
+    }
 } 
+
+
+/* TABLET SCREEN */
+/* ----------------------------------- */
+/* TABLET SCREEN */
+/* ----------------------------------- */
+/* TABLET SCREEN */
+/* ----------------------------------- */
 
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .navbar {
         max-width: 684px;
+        justify-content: space-between;
     }
 
     .header-container {
         max-width: 600px;        
-        flex-direction: column;   
-        margin: 0 72px;
+        flex-direction: column;
     }
 
     .header-content {
@@ -562,4 +660,21 @@ main {
     .nav-links {
         gap: 20px;
     }
+
+    .training {
+        max-width: 684px;
+    }
+
+    .training-pic1,
+    .training-pic3,
+    .training-pic5,
+    .training-pic6 {
+        width: 32%;
+    }
+
+    .training-pic2,
+    .training-pic4 {
+        width: 36%;
+    }
+
 }
