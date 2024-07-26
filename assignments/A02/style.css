@@ -272,7 +272,7 @@ main {
     max-width: 1440px;
     margin: 0 auto;
     background: rgb(0, 0, 0);
-    border: 1px;
+    /* border: 1px; */
     /* border: 2px dashed black; */
 }
 
@@ -478,11 +478,6 @@ main {
 
 
 @media screen and (max-width: 576px) {
-
-    main {
-        transform: translateY(-30px);
-    }
-
     .navbar {
         max-width: 353px;
     }
@@ -589,6 +584,9 @@ main {
 
 
 
+
+    /* styles of main section */
+    /* styles of main section */
 
     /* trainings and exercises - mobile device */
 
