@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* font-family: "Oswald", sans-serif; */
+
+body {
+    max-width: 1060px;
+    margin: 0 auto;
+    font-family: "Oswald", sans-serif;
+}
+
+.navigation {
+    text-align: center;
+    margin: 0;
+}
+
+.navigation p {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+sup,
+.navigation p {
+    color: red;
+    font-weight: 600;
+}
+
+/* intro */
+.intro {
+    margin: 0 auto;
+    text-align: center;
+}
+.intro h2 {
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+
+/* table */
+table {
+    border: 2px dashed red;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td, th {
+    border: 1px solid black;
+    padding: 2px 12px;
+}
+.title {
+    text-align: center;
+    background-color: gainsboro;
+}
+
