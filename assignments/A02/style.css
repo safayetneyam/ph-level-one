@@ -834,6 +834,168 @@ main {
     left: 20px;
 }
 
+
+/* subscription part */
+/* subscription part */
+
+.subscription {
+    padding-top: 20px;
+    max-width: 1060px;
+    margin: 0 auto;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.subs-content {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.subs-content > h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    color: white;
+}
+
+.subs-content > p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.price-plan {
+    text-align: center;
+    border: 3px solid green;
+    width: 255px;
+    color: white;
+    padding: 120px 30px 140px 30px;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 2px 2px 46px -4px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.quarterly-plan {
+    background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.yearly-plan {
+    background: #ff416c;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    padding-bottom: 220px;
+}
+
+.half-yearly-plan {
+    background: #00b09b;
+    background: linear-gradient(to right, #96c93d, #00b09b);
+}
+
+.price-plan::before {
+    content: "$150";
+    position: absolute;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 120px;
+    font-weight: 900;
+    bottom: -15px;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.quarterly-plan::before {
+    content: "$90";
+    left: 35px;
+}
+
+.yearly-plan::before {
+    content: "$270";
+    bottom: 180px;
+}
+
+.half-yearly-plan::before {
+    content: "$150";
+}
+
+.price {
+    text-align: center;
+    position: relative;
+}
+
+.dollar-sign {
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    transform: translate(-110px, 20px);
+}
+
+.quarterly-plan .dollar-sign {
+    transform: translate(-80px, 20px);
+}
+
+.half-yearly-plan .dollar-sign {
+    transform: translate(-100px, 20px);
+}
+
+.how-much {
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.plan-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.plan-title > h3 {
+    font-size: 25px;
+    margin: 0px;
+}
+
+.side-line {
+    width: 20%;
+    height: 1px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.feature {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -15px;
+    text-shadow: 1px 1px black;
+}
+
+.plan-img {
+    position: absolute;
+    width: 50%;
+    transform: translate(24px, -365px);
+}
+
+.special-discount {
+    position: absolute;
+    width: 50%;
+    transform: translate(-75px, 50px);
+}
+
 /* footer part */
 /* ----------------------------------- */
 /* footer part */
@@ -1169,6 +1331,32 @@ footer {
         /* added customized code  */
     }
 
+
+    .subscription {
+        max-width: 355px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subs-content {
+        max-width: 350px;
+    }
+
+    .subs-content > h1 {
+        font-size: 35px;
+    }
+
+    .subs-content > p {
+        text-align: justify;
+    }
+
+    .plans {
+        flex-direction: column;
+        gap: 30px;
+    }
+
     /* meet our team */
 
     .team {
@@ -1339,6 +1527,67 @@ footer {
     .team-trainer {
         width: 199px;
         height: 272px;
+    }
+
+    /* subscription */
+
+    .subscription {
+        max-width: 677px;
+    }
+
+    .price-plan {
+        max-width: 190px;
+        padding: 65px 10px 90px 10px;
+    }
+
+    .yearly-plan {
+        padding-bottom: 150px;
+    }
+
+    .how-much {
+        font-size: 55px;
+        font-weight: 900;
+    }
+
+    .dollar-sign {
+        font-size: 20px;
+        transform: translate(-75px, 15px);
+    }
+    
+    .quarterly-plan .dollar-sign {
+        transform: translate(-55px, 15px);
+    }
+    
+    .half-yearly-plan .dollar-sign {
+        transform: translate(-70px, 15px);
+    }
+
+    .price-plan::before {
+        font-size: 80px;
+    }
+
+    .quarterly-plan::before {
+        left: 20px;
+    }
+    
+    .yearly-plan::before {
+        bottom: 120px;
+    }
+
+    .feature {
+        font-size: 16px;
+    }
+
+    .plan-img {
+        position: absolute;
+        width: 40%;
+        transform: translate(-40px, -262px);
+    }
+
+    .special-discount {
+        position: absolute;
+        width: 50%;
+        transform: translate(-50px, 30px);
     }
 
     /* footer part */
