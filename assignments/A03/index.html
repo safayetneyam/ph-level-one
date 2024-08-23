@@ -45,8 +45,9 @@
 
 <body class="font-manrope">
   <!-- header part -->
-  <header class="pr-2 md:pr-0 py-6 bg-gray-100">
-    <div class="navbar container mx-auto">
+  <header class="pt-6 pb-12 bg-gray-100">
+    <!-- navbar -->
+    <div class="navbar container mx-auto pr-5">
       <div class="navbar-start">
         <!-- logo -->
         <a class="btn btn-ghost text-4xl font-extrabold"><i
@@ -65,7 +66,8 @@
         <div class="hidden md:flex gap-3 md:gap-2">
           <!-- search button -->
           <button class="btn btn-ghost btn-sm btn-circle h-10 w-10 bg-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -73,16 +75,17 @@
 
           <!-- cart button -->
           <button class="btn btn-ghost btn-sm btn-circle h-10 w-10 bg-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
           </button>
 
-          <a class="btn rounded-full bg-greenish text-lg font-bold">Book Consult<i
+          <a class="btn border-none rounded-full bg-greenish text-lg font-bold">Book Consult<i
               class="fa-solid fa-arrow-right text-sm -rotate-45 bg-[#1C1C1C] text-white h-6 w-6 pt-0.5 rounded-full"></i></a>
         </div>
-        
+
         <!-- dropdown -->
         <div class="dropdown relative">
           <div tabindex="0" role="button" class="btn btn-ghost btn-sm btn-circle bg-white h-10 w-10 lg:hidden">
@@ -99,6 +102,19 @@
         </div>
       </div>
     </div>
+
+    <!-- content -->
+    <div class="w-[90%] mx-auto flex flex-col justify-center items-center pt-10 space-y-6">
+      <!-- banner -->
+      <img src="images/banner.png" alt="" class=" w-[80%] md:w-[65%] lg:w-[35%]">
+      <div class="text-center w-full lg:w-4/6 space-y-6">
+        <h1 class="text-3xl md:text-4xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+        <p class="text-grayish font-bold w-[100%] md:w-5/6 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <a class="btn border-none rounded-full bg-[#ABEF5F80] text-lg font-bold w-full md:w-auto">View Details<i
+          class="fa-solid fa-arrow-right text-sm -rotate-45 bg-greenish text-black h-6 w-6 pt-0.5 rounded-full"></i></a>
+      </div>
+    </div>
+
   </header>
 
   <!-- main part -->
