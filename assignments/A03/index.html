@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rintario | An Architectural Solutions...</title>
-    <link rel="icon" type="image/x-icon" href="./images/icons/motorbike-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio | An Architectural Solutions...</title>
+  <link rel="icon" type="image/x-icon" href="./images/icon/building-plan.png">
 
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- "Poppins", sans-serif -->
-    
-    <!-- DaisyUI + Tailwind CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- "Poppins", sans-serif -->
 
-    <!-- customised css -->
-    <style>
-        .font-manrope {
-            font-family: "Manrope", sans-serif;
+  <!-- fontawesome cdn -->
+  <script src="https://kit.fontawesome.com/2f077c622b.js" crossorigin="anonymous"></script>
+
+  <!-- DaisyUI + Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- customised css -->
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+
+  <!-- tailwind config file -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'greenish': '#ABEF5F',
+            'grayish': '#737373'
+          }
         }
-    </style>
-
-    <!-- tailwind config file -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        'greenish': '#ABEF5F'
-                    }
-                }
-            }
-        }
-    </script>
+      }
+    }
+  </script>
 </head>
+
 <body class="font-manrope">
+  <!-- header part -->
+  <header class="pr-2 md:pr-0 py-6 bg-gray-100">
+    <div class="navbar container mx-auto">
+      <div class="navbar-start">
+        <!-- logo -->
+        <a class="btn btn-ghost text-4xl font-extrabold"><i
+            class="fa-solid fa-arrow-right text-xl -rotate-45 bg-greenish h-9 w-9 pt-1 rounded-full"></i>Rinterio</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-base text-grayish">
+          <li><a class="font-bold">Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end flex gap-3 md:gap-2">
+        <div class="hidden md:flex gap-3 md:gap-2">
+          <!-- search button -->
+          <button class="btn btn-ghost btn-sm btn-circle h-10 w-10 bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
 
-    <!-- header part -->
-    <header>
+          <!-- cart button -->
+          <button class="btn btn-ghost btn-sm btn-circle h-10 w-10 bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </button>
 
-    </header>
-    
-    
-    
-    <!-- main part -->
-    <main>
+          <a class="btn rounded-full bg-greenish text-lg font-bold">Book Consult<i
+              class="fa-solid fa-arrow-right text-sm -rotate-45 bg-[#1C1C1C] text-white h-6 w-6 pt-0.5 rounded-full"></i></a>
+        </div>
+        
+        <!-- dropdown -->
+        <div class="dropdown relative">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-sm btn-circle bg-white h-10 w-10 lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow absolute right-0 text-grayish">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    </main>
+  <!-- main part -->
+  <main>
 
+  </main>
 
+  <!-- footer part -->
+  <footer>
 
-    <!-- footer part -->
-    <footer>
-
-    </footer>
-
-
+  </footer>
 </body>
+
 </html>
