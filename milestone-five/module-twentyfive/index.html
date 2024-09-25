@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check DOM</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Learning DOM</h1>
+    </header>
+
+    <main id = "main-container">
+
+        <section>
+            <h3>I'm Neyam</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, deleniti. Consequatur at dolorum dolor culpa iusto autem nisi, officia voluptates ducimus? Dignissimos doloremque quam blanditiis natus voluptatum voluptates! Vero, quidem!</p>    
+        </section>
+        
+        <section class="fruit-container">
+            <h2>Fruits</h2>
+            <ul id="fruit-list">
+                <li>Aam</li>
+                <li>Jaam</li>
+                <li>Kathal</li>
+                <li>Lichu</li>
+            </ul>
+        </section>
+        
+        <section id="area-container" class="text-center">
+
+            <h2 id="area-title" class="title areaTitle titleArea nameAreas">Title of Areas</h2>
+            <ul>
+                <li class="place">Dhaka</li>
+                <li class="place">Narshindi</li>
+                <li class="place">Bhairab</li>
+                <li class="place">Brahmanbaria</li>
+                <li class="place">Ashuganj</li>
+            </ul> 
+
+        </section>
+
+          
+
+    </main>
+
+    <!-- <script>
+        let places = document.getElementsByClassName('place');
+        for (const place of places) {
+            console.log(place.innerText);
+        }
+
+        let firstPlace = document.querySelector('.place');
+        console.log('first element by querySelector() is', firstPlace.innerText)
+
+        document.getElementById('area-title').style.color = 'red';
+
+        document.getElementById('area-title').style.backgroundColor = 'yellow';
+
+        document.getElementById('area-title').style.textAlign = 'center';
+
+        let attributes = document.getElementById('area-title');
+        console.log(attributes.getAttribute('id'));
+        console.log(attributes.getAttribute('class'));
+        console.log(attributes.classList);
+        console.log(attributes.classList.remove('nameAreas'));
+        console.log(attributes.getAttribute('class'));
+        console.log(attributes.classList.add('areaIndex'));
+        console.log(attributes.getAttribute('class'));
+
+
+        // chaging inner html
+        console.log('Dhaka is changed into', document.getElementsByClassName('place')[0].innerHTML = 'Barishal');
+    </script> -->
+    <script src="js/append.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/node.js"></script>
+    <!-- <script src="js/append.js"></script> -->
+</body>
+</html>
