@@ -40,12 +40,10 @@ salmonButton.addEventListener('click', function makeSalmon() {
 });
 
 
-// TYPE - IV (Final)
+// TYPE - IV (Final) IMPORTANT
 document.getElementById('make-crimson').addEventListener('click', function() {
     document.body.style.backgroundColor = 'crimson';
 });
-
-
 
 
 
