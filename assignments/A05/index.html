@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+
+    <!-- lexend | google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- daisyUI with Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome cdn : safayetneyam@northsouth.edu -->
+    <script src="https://kit.fontawesome.com/2f077c622b.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Tailwind Configuration | tailwing.config.js isn't working -->
+    <script src="tailwind-config.js"></script>
+</head>
+
+<body class="font-lexend">
+
+    <header id="header" class="fixed top-0 left-0 right-0 z-50">
+        <div class="navbar bg-nav shadow-lg py-6">
+            <div class="flex justify-between items-center w-7/12 mx-auto">
+                <button
+                    class="btn bg-green text-xl font-semibold text-primary px-8 py-2 rounded-md border-none">Blog</button>
+                <div class="flex gap-4">
+                    <img src="./assets/logo.png" alt="">
+                    <p class="flex gap-1 text-2xl font-semibold text-primary">Donate Bangladesh</p>
+                </div>
+                <div class="flex gap-2">
+                    <img src="./assets/coin.png" alt="">
+                    <div class="flex gap-1 text-xl font-medium text-secondary">
+                        <span id="account-balance" class="">25250</span>
+                        <span>BDT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sub sections section -->
+        <div class="backdrop-blur-sm bg-gradient-to-b from-nav to-white/20">
+            <div class="flex gap-3 justify-center items-center pt-9 pb-6 w-7/12 mx-auto">
+                <button id="display-donation"
+                    class="btn btn-md px-8 py-2 text-xl font-semibold text-primary bg-green border-none">Donation</button>
+                <button id="display-history"
+                    class="btn btn-md px-8 py-2 text-xl font-semibold text-secondary bg-white border-1 border-gray-300">History</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="mt-56 w-7/12 mx-auto">
+        <section id="donation-section" class="donation flex flex-col gap-5">
+            <div class="grid grid-cols-2 justify-start gap-5 border-2 p-5 rounded-xl">
+                <div class="donation-image w-[520px] h-[390px]">
+                    <img class="w-full h-full object-cover rounded-xl" src="./assets/noakhali.png" alt="">
+                </div>
+                <div class="donation-content flex flex-col justify-between items-start gap-5">
+                    <button class="btn bg-gray-100 text-secondary text-base">
+                        <img src="./assets/coin.png" alt="">
+                        <span>0</span>
+                        <span>BDT</span>
+                    </button>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-primary text-xl font-bold">Donate for Flood Relief at Noakhali, Bangladesh</h3>
+                        <p class="text-base font-light">
+                            The recent floods in Feni, Bangladesh, have caused severe devastation, displacing thousands
+                            and
+                            damaging homes and farmland. Immediate relief is essential, and donations are being sought
+                            to
+                            provide food, shelter, and medical aid. Your support can help rebuild lives and bring hope
+                            to
+                            the affected communities.
+                        </p>
+                    </div>
+                    <div class="flex flex-col w-full gap-3">
+                        <input type="text" placeholder="Write Donation Amount"
+                            class="border-2 rounded-lg px-5 py-2 text-base font-light">
+                        <button class="bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 justify-start gap-5 border-2 p-5 rounded-xl">
+                <div class="donation-image w-[520px] h-[390px]">
+                    <img class="w-full h-full object-cover rounded-xl" src="./assets/feni.png" alt="">
+                </div>
+                <div class="donation-content flex flex-col justify-between items-start gap-5">
+                    <button class="btn bg-gray-100 text-secondary text-base">
+                        <img src="./assets/coin.png" alt="">
+                        <span>0</span>
+                        <span>BDT</span>
+                    </button>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-primary text-xl font-bold">Donate for Famine 2024 at Feni, Bangladesh</h3>
+                        <p class="text-base font-light">
+                            The recent flood in Noakhali, Bangladesh, caused widespread devastation, submerging homes
+                            and
+                            farmland. Thousands of people were displaced, and essential infrastructure was severely
+                            damaged.
+                            Rescue efforts are ongoing, but many areas remain inaccessible due to rising water levels.
+                        </p>
+                    </div>
+                    <div class="flex flex-col w-full gap-3">
+                        <input type="text" placeholder="Write Donation Amount"
+                            class="border-2 rounded-lg px-5 py-2 text-base font-light">
+                        <button class="bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 justify-start gap-5 border-2 p-5 rounded-xl">
+                <div class="donation-image w-[520px] h-[390px]">
+                    <img class="w-full h-full object-cover rounded-xl" src="./assets/quota-protest.png" alt="">
+                </div>
+                <div class="donation-content flex flex-col justify-between items-start gap-5">
+                    <button class="btn bg-gray-100 text-secondary text-base">
+                        <img src="./assets/coin.png" alt="">
+                        <span>0</span>
+                        <span>BDT</span>
+                    </button>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-primary text-xl font-bold">Aif for Injured in the Quota Movement</h3>
+                        <p class="text-base font-light">
+                            The Aid for Injured initiative supports those injured during the Quota Movement, offering
+                            medical aid and rehabilitation assistance. Your contributions can help cover treatment
+                            costs,
+                            provide essential care, and offer relief to the affected individuals. Together, we can make
+                            a
+                            difference and support their recovery.
+                        </p>
+                    </div>
+                    <div class="flex flex-col w-full gap-3">
+                        <input type="text" placeholder="Write Donation Amount"
+                            class="border-2 rounded-lg px-5 py-2 text-base font-light">
+                        <button class="bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="history-section" class="hidden">
+            <div id="history-archive" class="flex flex-col gap-5 border-2 border-gray-300 rounded-xl p-5">
+                History
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="h-24 bg-nav mt-16">
+
+    </footer>
+
+    <script src="./js/options.js"></script>
+    <script src="./js/utilities.js"></script>
+</body>
+
+</html>
