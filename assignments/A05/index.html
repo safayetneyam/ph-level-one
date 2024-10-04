@@ -23,9 +23,9 @@
     <script src="tailwind-config.js"></script>
 </head>
 
-<body class="font-lexend">
-
-    <header id="header" class="fixed top-0 left-0 right-0 z-50">
+<!-- scroll-smooth min-h-screen flex flex-col -->
+<body class="font-lexend min-h-screen flex flex-col justify-between">
+    <header id="header" class="sticky top-0 left-0 right-0 z-50">
         <div class="navbar bg-nav shadow-lg py-6">
             <div class="flex justify-between items-center w-7/12 mx-auto">
                 <button
@@ -37,7 +37,7 @@
                 <div class="flex gap-2">
                     <img src="./assets/coin.png" alt="">
                     <div class="flex gap-1 text-xl font-medium text-secondary">
-                        <span id="account-balance" class="">25250</span>
+                        <span id="account-balance" class="">13250</span>
                         <span>BDT</span>
                     </div>
                 </div>
@@ -55,20 +55,21 @@
         </div>
     </header>
 
-    <main id="main" class="mt-56 w-7/12 mx-auto">
-        <section id="donation-section" class="donation flex flex-col gap-5">
+    <!-- container max-w-screen-xl -->
+    <main id="main" class="container max-w-screen-xl mx-auto pb-10">
+        <section id="donation-section" class="donation mx-20 flex flex-col gap-5">
             <div class="grid grid-cols-2 justify-start gap-5 border-2 p-5 rounded-xl">
-                <div class="donation-image w-[520px] h-[390px]">
+                <div class="donation-image w-full h-full">
                     <img class="w-full h-full object-cover rounded-xl" src="./assets/noakhali.png" alt="">
                 </div>
                 <div class="donation-content flex flex-col justify-between items-start gap-5">
                     <button class="btn bg-gray-100 text-secondary text-base">
                         <img src="./assets/coin.png" alt="">
-                        <span>0</span>
+                        <span id="collection-noakhali">3250</span>
                         <span>BDT</span>
                     </button>
                     <div class="flex flex-col gap-3">
-                        <h3 class="text-primary text-xl font-bold">Donate for Flood Relief at Noakhali, Bangladesh</h3>
+                        <h3 id="title-noakhali" class="text-primary text-xl font-bold">Donation for Flood Relief at Noakhali, Bangladesh</h3>
                         <p class="text-base font-light">
                             The recent floods in Feni, Bangladesh, have caused severe devastation, displacing thousands
                             and
@@ -80,25 +81,45 @@
                         </p>
                     </div>
                     <div class="flex flex-col w-full gap-3">
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input id="input-noakhali" type="text" placeholder="Write Donation Amount"
                             class="border-2 rounded-lg px-5 py-2 text-base font-light">
-                        <button class="bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
+                        <button id="btn-noakhali"
+                            class="btn bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
                             Now</button>
+                        <dialog id="modal-noakhali" class="modal">
+                            <form method="dialog"
+                                class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+                                <!-- <i class="fa-regular fa-circle-check text-6xl text-green"></i> -->
+                                <h3 class="font-bold text-3xl text-primary my-5">Congrats</h3>
+                                <img class="h-10 w-10" src="./assets/coin.png" alt="">
+                                <div class="text-center pt-4">
+                                    <p class="font-bold">
+                                        Thanks for Donating in District Treasury, Noakhali! <br>Ref. Flood Relief
+                                        Noakhali.
+                                    </p>
+                                </div>
+                                <p class="my-4 mx-8 text-center">
+                                    Your donation record has been initiated successfully!
+                                </p>
+                                <button id="btn-continue"
+                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary">Close</button>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-2 justify-start gap-5 border-2 p-5 rounded-xl">
-                <div class="donation-image w-[520px] h-[390px]">
+                <div class="donation-image w-full h-full">
                     <img class="w-full h-full object-cover rounded-xl" src="./assets/feni.png" alt="">
                 </div>
                 <div class="donation-content flex flex-col justify-between items-start gap-5">
                     <button class="btn bg-gray-100 text-secondary text-base">
                         <img src="./assets/coin.png" alt="">
-                        <span>0</span>
+                        <span id="collection-feni">12120</span>
                         <span>BDT</span>
                     </button>
                     <div class="flex flex-col gap-3">
-                        <h3 class="text-primary text-xl font-bold">Donate for Famine 2024 at Feni, Bangladesh</h3>
+                        <h3 id="title-feni" class="text-primary text-xl font-bold">Donation for Famine 2024 at Feni, Bangladesh</h3>
                         <p class="text-base font-light">
                             The recent flood in Noakhali, Bangladesh, caused widespread devastation, submerging homes
                             and
@@ -108,25 +129,45 @@
                         </p>
                     </div>
                     <div class="flex flex-col w-full gap-3">
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input id="input-feni" type="text" placeholder="Write Donation Amount"
                             class="border-2 rounded-lg px-5 py-2 text-base font-light">
-                        <button class="bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
+                        <button id="btn-feni"
+                            class="btn bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
                             Now</button>
+                        <dialog id="modal-feni" class="modal">
+                            <form method="dialog"
+                                class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+                                <!-- <i class="fa-regular fa-circle-check text-6xl text-green"></i> -->
+                                <h3 class="font-bold text-3xl text-primary my-5">Congrats</h3>
+                                <img class="h-10 w-10" src="./assets/coin.png" alt="">
+                                <div class="text-center pt-4">
+                                    <p class="font-bold">
+                                        Thanks for Donating in Divisional Treasury, Chattogram! <br>Ref. Famine Feni
+                                        2024.
+                                    </p>
+                                </div>
+                                <p class="my-4 mx-8 text-center">
+                                    Your donation record has been initiated successfully!
+                                </p>
+                                <button id="btn-continue"
+                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary">Close</button>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-2 justify-start gap-5 border-2 p-5 rounded-xl">
-                <div class="donation-image w-[520px] h-[390px]">
+                <div class="donation-image w-full h-full">
                     <img class="w-full h-full object-cover rounded-xl" src="./assets/quota-protest.png" alt="">
                 </div>
                 <div class="donation-content flex flex-col justify-between items-start gap-5">
                     <button class="btn bg-gray-100 text-secondary text-base">
                         <img src="./assets/coin.png" alt="">
-                        <span>0</span>
+                        <span id="collection-quota">9650</span>
                         <span>BDT</span>
                     </button>
                     <div class="flex flex-col gap-3">
-                        <h3 class="text-primary text-xl font-bold">Aif for Injured in the Quota Movement</h3>
+                        <h3 id="title-quota" class="text-primary text-xl font-bold">Aid for Injured in the Quota Movement</h3>
                         <p class="text-base font-light">
                             The Aid for Injured initiative supports those injured during the Quota Movement, offering
                             medical aid and rehabilitation assistance. Your contributions can help cover treatment
@@ -137,25 +178,43 @@
                         </p>
                     </div>
                     <div class="flex flex-col w-full gap-3">
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input id="input-quota" type="text" placeholder="Write Donation Amount"
                             class="border-2 rounded-lg px-5 py-2 text-base font-light">
-                        <button class="bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
+                        <button id="btn-quota"
+                            class="btn bg-green text-center text-primary font-semibold rounded-lg py-2">Donate
                             Now</button>
+                        <dialog id="modal-quota" class="modal">
+                            <form method="dialog"
+                                class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+                                <!-- <i class="fa-regular fa-circle-check text-6xl text-green"></i> -->
+                                <h3 class="font-bold text-3xl text-primary my-5">Congrats</h3>
+                                <img class="h-10 w-10" src="./assets/coin.png" alt="">
+                                <div class="text-center pt-4">
+                                    <p class="font-bold">
+                                        Thanks for Donating in Chief Advisors Fund! <br>Ref. Quota Movement 2024.
+                                    </p>
+                                </div>
+                                <p class="my-4 mx-8 text-center">
+                                    Your donation record has been initiated successfully!
+                                </p>
+                                <button id="btn-continue"
+                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary">Close</button>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
             </div>
         </section>
         <section id="history-section" class="hidden">
-            <div id="history-archive" class="flex flex-col gap-5 border-2 border-gray-300 rounded-xl p-5">
-                History
+            <div id="history-archive" class="flex flex-col gap-5">
+                <!-- history of donations will be recorded here -->
             </div>
         </section>
     </main>
 
-    <footer id="footer" class="h-24 bg-nav mt-16">
+    <footer id="footer" class="py-12 bg-nav"></footer>
 
-    </footer>
-
+    <script src="./js/donations.js"></script>
     <script src="./js/options.js"></script>
     <script src="./js/utilities.js"></script>
 </body>

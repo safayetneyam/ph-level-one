@@ -12,3 +12,4 @@ document.getElementById('display-history').addEventListener('click', function(ev
     buttonChange('display-history');
     fixTheFooter();
 })
+
