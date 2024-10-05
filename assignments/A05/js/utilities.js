@@ -55,7 +55,7 @@ function buttonChange(idExt) {
         document.getElementById('display-history').classList.remove('text-secondary', 'border-gray-300');
 
         document.getElementById('display-donation').classList.add('bg-white', 'border-gray-300', 'text-secondary');
-        document.getElementById('display-history').classList.add('text-primary');
+        document.getElementById('display-history').classList.add('text-primary', 'border-none');
     }
 }
 
