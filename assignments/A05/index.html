@@ -25,7 +25,7 @@
 
 <!-- scroll-smooth min-h-screen flex flex-col -->
 
-<body class="font-lexend min-h-screen flex flex-col">
+<body class="font-lexend min-h-screen flex flex-col bg-white">
     <header id="navbar" class="sticky top-0 left-0 right-0 w-full">
         <div class="bg-nav shadow-lg py-6">
             <div class="container max-w-screen-xl flex justify-between items-center mx-auto px-4">
@@ -46,7 +46,7 @@
         </div>
 
         <!-- sub sections section -->
-        <div class="backdrop-blur-sm bg-white/80">
+        <div class="backdrop-blur-sm bg-gradient-to-b from-nav to-white/80">
             <div class="flex justify-center items-center gap-3 pt-3 pb-4 md:py-4">
                 <button id="display-donation"
                     class="btn btn-sm md:btn-md px-4 md:px-8 py-1 md:py-2 text-base md:text-xl font-semibold text-primary bg-green border-none">Donation</button>
@@ -84,27 +84,27 @@
                     </div>
                     <div class="flex flex-col w-full gap-2 md:gap-3">
                         <input id="input-noakhali" type="text" placeholder="Write Donation Amount"
-                            class="border-2 border-gray-300 rounded-lg px-5 py-1 md:py-2 text-sm md:text-base font-light bg-white focus:border-green focus:ring-green">
+                            class="border-2 border-gray-300 rounded-lg px-5 py-1 md:py-2 text-sm md:text-base font-normal text-black bg-white focus:border-green focus:ring-green">
                         <button id="btn-noakhali" class="bg-green text-primary font-semibold rounded-lg 
                         px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base">Donate
                             Now</button>
                         <dialog id="modal-noakhali" class="modal">
                             <form method="dialog"
-                                class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+                                class="modal-box px-5 py-10 flex flex-col justify-center items-center bg-white">
                                 <!-- <i class="fa-regular fa-circle-check text-6xl text-green"></i> -->
-                                <h3 class="font-bold text-3xl text-primary my-5">Congrats</h3>
+                                <h3 class="font-bold text-3xl text-black my-5">Congrats</h3>
                                 <img src="./assets/coin.png" alt="">
                                 <div class="text-center pt-4">
-                                    <p class="font-bold">
+                                    <p class="text-primary font-bold">
                                         Thanks for Donating in District Treasury, Noakhali! <br>Ref. Flood Relief
                                         Noakhali.
                                     </p>
                                 </div>
-                                <p class="my-4 mx-8 text-center">
+                                <p class="my-4 mx-8 text-secondary text-center">
                                     Your donation record has been initiated successfully!
                                 </p>
                                 <button id="btn-continue"
-                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary">Close</button>
+                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary border-none">Close</button>
                             </form>
                         </dialog>
                     </div>
@@ -133,27 +133,27 @@
                     </div>
                     <div class="flex flex-col w-full gap-2 md:gap-3">
                         <input id="input-feni" type="text" placeholder="Write Donation Amount"
-                            class="border-2 border-gray-300 rounded-lg px-5 py-1 md:py-2 text-sm md:text-base font-light bg-white focus:border-green focus:ring-green">
+                            class="border-2 border-gray-300 rounded-lg px-5 py-1 md:py-2 text-sm md:text-base font-normal text-black bg-white focus:border-green focus:ring-green">
                         <button id="btn-feni" class="bg-green text-primary font-semibold rounded-lg 
                         px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base">Donate
                             Now</button>
                         <dialog id="modal-feni" class="modal">
                             <form method="dialog"
-                                class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+                                class="modal-box px-5 py-10 flex flex-col justify-center items-center bg-white">
                                 <!-- <i class="fa-regular fa-circle-check text-6xl text-green"></i> -->
-                                <h3 class="font-bold text-3xl text-primary my-5">Congrats</h3>
+                                <h3 class="font-bold text-3xl text-black my-5">Congrats</h3>
                                 <img class="h-10 w-10" src="./assets/coin.png" alt="">
                                 <div class="text-center pt-4">
-                                    <p class="font-bold">
+                                    <p class="text-primary font-bold">
                                         Thanks for Donating in Divisional Treasury, Chattogram! <br>Ref. Famine Feni
                                         2024.
                                     </p>
                                 </div>
-                                <p class="my-4 mx-8 text-center">
+                                <p class="my-4 mx-8 text-secondary text-center">
                                     Your donation record has been initiated successfully!
                                 </p>
                                 <button id="btn-continue"
-                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary">Close</button>
+                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary border-none">Close</button>
                             </form>
                         </dialog>
                     </div>
@@ -184,26 +184,26 @@
                     </div>
                     <div class="flex flex-col w-full gap-2 md:gap-3">
                         <input id="input-quota" type="text" placeholder="Write Donation Amount"
-                            class="border-2 border-gray-300 rounded-lg px-5 py-1 md:py-2 text-sm md:text-base font-light bg-white focus:border-green focus:ring-green">
+                            class="border-2 border-gray-300 rounded-lg px-5 py-1 md:py-2 text-sm md:text-base font-normal text-black bg-white focus:border-green focus:ring-green">
                         <button id="btn-quota" class="bg-green text-primary font-semibold rounded-lg 
                             px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base">Donate
                             Now</button>
                         <dialog id="modal-quota" class="modal">
                             <form method="dialog"
-                                class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+                                class="modal-box px-5 py-10 flex flex-col justify-center items-center bg-white">
                                 <!-- <i class="fa-regular fa-circle-check text-6xl text-green"></i> -->
-                                <h3 class="font-bold text-3xl text-primary my-5">Congrats</h3>
+                                <h3 class="font-bold text-3xl text-black my-5">Congrats</h3>
                                 <img class="h-10 w-10" src="./assets/coin.png" alt="">
                                 <div class="text-center pt-4">
-                                    <p class="font-bold">
+                                    <p class="text-primary font-bold">
                                         Thanks for Donating in Chief Advisors Fund! <br>Ref. Quota Movement 2024.
                                     </p>
                                 </div>
-                                <p class="my-4 mx-8 text-center">
+                                <p class="my-4 mx-8 text-secondary text-center">
                                     Your donation record has been initiated successfully!
                                 </p>
                                 <button id="btn-continue"
-                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary">Close</button>
+                                    class="btn bg-green px-16 btn-md hover:bg-black hover:text-white transition-colors  duration-300 ease-in text-primary border-none">Close</button>
                             </form>
                         </dialog>
                     </div>
@@ -211,7 +211,7 @@
             </div>
         </section>
         <section id="history-section" class="hidden bg-white">
-            <div id="history-archive" class="flex flex-col gap-3 pb-12 px-4 text-sm md:text-base">
+            <div id="history-archive" class="flex flex-col gap-3 pb-16 px-4 text-sm md:text-base">
 
             </div>
         </section>
