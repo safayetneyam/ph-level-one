@@ -61,9 +61,10 @@ function buttonChange(idExt) {
 
 function fixTheFooter() {
     document.getElementById('history-section').classList.remove('hidden');
-    document.getElementById('footer').classList.add('sticky', 'bottom-0', 'left-0', 'right-0');
+    document.getElementById('footer').classList.add('fixed', 'bottom-0', 'left-0', 'right-0');
 }
 
 function unfixTheFooter() {
-    document.getElementById('footer').classList.remove('sticky', 'bottom-0', 'left-0', 'right-0');
+    document.getElementById('history-section').classList.add('hidden');
+    document.getElementById('footer').classList.remove('fixed', 'bottom-0', 'left-0', 'right-0');
 }
